@@ -3,9 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
+// ✅ Correct config for GitHub Pages deployment
 export default defineConfig(({ mode }) => ({
-  base: '/biz-boost-savings/', // ✅ Add this line
+  base: '/biz-boost-savings/', // ✅ This is crucial
   server: {
     host: "::",
     port: 8080,
